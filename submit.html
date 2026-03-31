@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Grievance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="submit-bg">
+    <nav class="navbar">
+        <span class="logo">Grievance Portal</span>
+        <div class="nav-links">
+            <a href="status.html">Track Status</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="glass-card wide">
+            <h2>File a New Grievance</h2>
+            <form id="grievance-form">
+                <input type="text" placeholder="Subject / Department" required>
+                <textarea rows="5" placeholder="Describe your issue in detail..." required></textarea>
+                <input type="file" class="file-input">
+                <button type="submit" class="btn-primary">Submit Complaint</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

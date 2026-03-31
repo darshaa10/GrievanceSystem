@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Status</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="status-bg">
+    <nav class="navbar">
+        <span class="logo">Grievance Portal</span>
+        <div class="nav-links">
+            <a href="submit.html">New Grievance</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="glass-card wide">
+            <h2>Your Grievances</h2>
+            <table class="status-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Subject</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#GRV-902</td>
+                        <td>2024-05-20</td>
+                        <td>Street Light Repair</td>
+                        <td><span class="badge pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>#GRV-844</td>
+                        <td>2024-05-15</td>
+                        <td>Water Supply Issue</td>
+                        <td><span class="badge resolved">Resolved</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

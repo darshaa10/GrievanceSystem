@@ -1,0 +1,57 @@
+/* General Styling */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+/* --- BACKGROUND IMAGES --- */
+/* Add your image URLs inside the url('') quotes below */
+
+.login-bg { 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('login image.png') no-repeat center center/cover; 
+}
+
+.submit-bg { 
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('submit image.png') no-repeat center center/cover; 
+}
+
+.status-bg { 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('submit image.png') no-repeat center center/cover; 
+}
+
+body { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* Layout Components */
+.container { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; }
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.glass-card.wide { max-width: 800px; }
+
+/* Form Elements */
+.input-group { margin-bottom: 15px; }
+input, textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; border: 1px solid #ddd; }
+
+.btn-primary {
+    width: 100%; padding: 12px; background: #2c3e50; color: white;
+    border: none; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 15px;
+}
+
+/* Navbar */
+.navbar { background: rgba(0,0,0,0.8); color: white; padding: 15px 50px; display: flex; justify-content: space-between; }
+.nav-links a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
+
+/* Table Styling */
+.status-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.status-table th, .status-table td { padding: 12px; border-bottom: 1px solid #eee; text-align: left; }
+.badge { padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; }
+.pending { background: #f39c12; color: white; }
+.resolved { background: #27ae60; color: white; }
